@@ -4,6 +4,7 @@
   "description": "for use demo webapp with express engine",
   "main": "app.js",
   "scripts": {
+    "build": "tailwind build -i script/tailwind.css -o public/styles/style.css && cleancss -o public/styles/style.min.css public/styles/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node app.js"
   },
